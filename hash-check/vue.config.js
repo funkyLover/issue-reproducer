@@ -46,7 +46,7 @@ module.exports = {
   lintOnSave: false,
   productionSourceMap: false,
   chainWebpack: config => {
-    config.plugin("hash").use(WebpackMd5Hash);
+    // config.plugin("hash").use(WebpackMd5Hash);
     config
       .plugin("prettier")
       .use(PrettierPlugin, [
